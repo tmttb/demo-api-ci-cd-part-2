@@ -1,0 +1,25 @@
+name: API Test CI
+
+on: push
+
+jobs:
+  api-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Newman
+        run: npm install -g newman
+
+      - name: Run Postman collection
+        run: >
+          newman run 2274802010972_TranMinhTheTuan_GoRest.postman_collection.json
+          -e 2274802010972_TranMinhTheTuan_GoRest_Env.postman_environment.json
+          -d users.csv
+          --env-var "token=${{ secrets.GOREST_TOKEN }}"
