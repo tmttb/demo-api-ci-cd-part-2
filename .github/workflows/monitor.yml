@@ -21,4 +21,5 @@ jobs:
         run: npm install -g newman
 
       - name: Run monitor collection
-        run: newman run Monitor.json
+        run: newman run Monitor.json --env-var "baseUrl=https://gorest.co.in/public/v2"
+      
