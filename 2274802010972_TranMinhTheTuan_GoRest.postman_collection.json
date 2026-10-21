@@ -458,7 +458,7 @@
   "variable": [
     {
       "key": "baseUrl",
-      "value": ""
+      "value": "https://gorest.co.in/public/v2"
     },
     {
       "key": "userId",
