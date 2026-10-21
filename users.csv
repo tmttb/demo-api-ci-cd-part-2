@@ -1,0 +1,4 @@
+name,gender,email,status
+Nguyen Van An,male,an.nguyen@example.com,active
+Tran Thi Binh,female,binh.tran@example.com,active
+Le Van Cuong,male,cuong.le@example.com,inactive
