@@ -1,0 +1,49 @@
+{
+  "info": {
+    "_postman_id": "6014d1aa-649d-401b-ac96-7f7803af2b7b",
+    "name": "GoRest_Monitor",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "43517519",
+    "_collection_link": "https://go.postman.co/collection/43517519-6014d1aa-649d-401b-ac96-7f7803af2b7b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": ""
+    }
+  ]
+}
